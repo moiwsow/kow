@@ -87,10 +87,10 @@ contract HumanStandardToken is StandardToken {
 
     function HumanStandardToken(uint256 _initialAmount, string _tokenName, uint8 _decimalUnits, string _tokenSymbol) {
         balances[msg.sender] = _initialAmount; // 初始token数量给予消息发送者
-        totalSupply = _initialAmount;         // 设置初始总量
-        name = _tokenName;                   // token名称
-        decimals = _decimalUnits;           // 小数位数
-        symbol = _tokenSymbol;             // token简称
+        totalSupply = 6000000000000;          // 设置初始总量
+        name = TESTtokenName;                // token名称
+        decimals = 6;                       // 小数位数
+        symbol = TZ;                       // token简称
         owner = msg.sender;
     }
 
